@@ -1,6 +1,7 @@
 import requests
 import random
 import sys
+improt json
 
 # Make an HTTP GET request to the cat-fact API
 # cat_url = "https://cat-fact.herokuapp.com/facts"
@@ -19,7 +20,7 @@ r = '''{
   "upvotes": 6,
   "userUpvoted": "None"
 }'''
-r_obj_list = r.json()
+r_obj_list = json.loads(r)
 
 # Create an empty list to store individual facts in
 # This will make it easy to select a random one later
